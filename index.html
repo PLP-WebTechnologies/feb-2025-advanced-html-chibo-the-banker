@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      table {
+        border: 3px solid rgb(17, 80, 101);
+      }
+      .image {
+        border: 5px solid rgb(17, 80, 101);
+        border-radius: 20px;
+      }
+      label,
+      .age,
+      .checkbox,
+      ol {
+        color: #fff9f9;
+      }
+      input {
+        border: 2px solid rgb(17, 80, 101);
+      }
+      body {
+        background-image: url(https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/30599063/pexels-photo-30599063/free-photo-of-aerial-view-of-highway-with-light-trails-in-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt=""
+      width="300"
+      height="300"
+      class="image"
+    />
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Emails</th>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>123 Maple Street, Springfield, IL, 62704</td>
+        <td>0712584145</td>
+        <td>janedoe@gmail.com</td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>456 Oak Avenue, Lakeside, CA, 92040</td>
+        <td>0776834184</td>
+        <td>johnd@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Peter Smith</td>
+        <td>789 Pine Lane, Greenwood, TX, 76204</td>
+        <td>0735638639</td>
+        <td>smithpete@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Shamiso Nyoni</td>
+        <td>101 Birch Road, Sunnyville, FL, 33101</td>
+        <td>0718450562</td>
+        <td>snyoni@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Rowan Ndou</td>
+        <td>202 Elm Drive, Rivertown, NY, 10001</td>
+        <td>0772396534</td>
+        <td>rowe.ndou@gmail.com</td>
+      </tr>
+    </table>
+    <form action="">
+      <br />
+      <label for="text"
+        >Text <br /><input
+          type="text"
+          required
+          placeholder="Fullname including first and last name"
+          name="text"
+          id="text"
+          minlength="3" />
+
+        <br />
+        <br
+      /></label>
+      <label for="email">Email</label><br /><input
+        type="email"
+        required
+        placeholder="Place your email here"
+        name="email"
+        id="email"
+      /><br />
+      <br />
+      <label for="date"
+        >Date <br /><input
+          type="date"
+          required
+          placeholder="Date"
+          name="date"
+          id="date"
+      /></label>
+      <br />
+      <br />
+
+      <!--Asks for nationality of page visitor-->
+      <label for="dropDown">Nationality</label>
+      <br />
+      <select name="dropDown" id="">
+        <option value="country">Gambian</option>
+        <option value="country">Zimbabwean</option>
+        <option value="country">Sudanes</option>
+        <option value="country">Kenyan</option>
+        <option value="country">Nigerian</option>
+        <option value="country">Zambian</option>
+        <option value="country">Ethopian</option>
+        <option value="country">Sudanese</option>
+      </select>
+      <br />
+      <br />
+      <!--Checkbox to see gender and employment status of user-->
+      <p class="checkbox">Tick a least one checkbox</p>
+      <ol type="I">
+        <li>
+          <input type="checkbox" name="gender" />
+          <label for="gender">Female</label>
+        </li>
+        <br />
+        <li>
+          <input type="checkbox" name="job" /> <label for="job">Employed</label>
+        </li>
+        <br />
+        <li>
+          <input type="checkbox" name="student" />
+          <label for="student">Student</label>
+        </li>
+      </ol>
+      <br />
+      <br />
+      <!--Radio buttons to show age of user-->
+      <p class="age">What is your age range.</p>
+      <input type="radio" id="ageRangeOne" name="age" />
+      <label for="ageRangeOne">18-25</label>
+      <br />
+      <input type="radio" id="ageRangeTwo" name="age" />
+      <label for="ageRangeTwo">25-30</label>
+      <br />
+      <input type="radio" id="ageRangeThree" name="age" />
+      <label for="ageRangeThree">30-35</label>
+      <br />
+      <input type="radio" id="ageRangeFour" name="age" />
+      <label for="ageRangeFour">35-40</label>
+      <br />
+      <input type="radio" id="ageRangeFive" name="age" />
+      <label for="ageRangeFive">40-45</label>
+    </form>
+  </body>
+</html>
